@@ -32,7 +32,7 @@ body {
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
 .dark {
@@ -41,8 +41,8 @@ body {
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #90a0d9;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --shadow: rgba(0, 0, 0, 0.2) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
 }
 
 ::-moz-selection {
@@ -346,6 +346,12 @@ main {
   line-height: 1.2;
 }
 
+.education__header__left h4,
+.education__header__right h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .education:hover {
   transform: translateY(-7px);
 }
@@ -381,7 +387,7 @@ main {
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+  color: var(--clr-primary);
 }
 
 .education .link--icon {
@@ -438,6 +444,12 @@ main {
   line-height: 1.2;
 }
 
+.experience__header__left h4,
+.experience__header__right h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .experience:hover {
   transform: translateY(-7px);
 }
@@ -469,7 +481,7 @@ main {
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+  color: var(--clr-primary);
 }
 
 .experience .link--icon {
@@ -530,7 +542,7 @@ main {
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+  color: var(--clr-primary);
 }
 
 .project .link--icon {
@@ -649,6 +661,7 @@ main {
   .experience__header {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
   }
 
   .experience__header h3 {
@@ -663,12 +676,19 @@ main {
   .experience__header__right {
     order: 1;
     text-align: left;
-    margin-bottom: 1em;
+  }
+
+  .experience__header__right h3 {
+    order: 1;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
   }
 
   .education__header {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
   }
 
   .education__header h3 {
@@ -683,7 +703,13 @@ main {
   .education__header__right {
     order: 1;
     text-align: left;
-    margin-bottom: 1em;
+  }
+
+  .education__header__right h3 {
+    order: 1;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
   }
 
   .project h3 {
