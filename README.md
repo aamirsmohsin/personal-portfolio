@@ -1,5 +1,5 @@
-# portfolio
+# personal-portfolio
 ## About
-Personal portfolio website made by Aamir Mohsin.
+Personal portfolio website created by Aamir Mohsin.
 
-[Access the live page here.](https://aamirsmohsin.com)
+[Access the live version here.](https://aamirsmohsin.com)
